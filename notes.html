@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<link rel="stylesheet" href="css/notes.css">
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img class="logoimg" src="pictures/cat (2).png" alt="logo">
+            <p class="logo">Study Buddy</p>
+        </div>
+            <nav class="navbar">
+                <a class="itm" href="index.html">Home</a>
+                <a class="itm" href="notes.html">Notes</a>
+                <a class="itm" href="community.html">Community</a>
+                <a class="itm" href="about.html">About Me</a>
+                <a class="itm" href="#">Log In</a>
+            </nav>
+        </div>
+        <div class="icons">
+          <label for="icons">
+            <i><img src="pictures/hamburger.png" class="menu-icon" alt=""></i>
+          </label>
+        </div>
+    </header>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+});
+    </script>
+   <h1 class="heading">Notes Section</h1>
+
+<center><h2 class="sem1">1st Semester(BSSE)</h2></center>
+<div class="slides">
+  <a href="#" class="subject">Programming Fundamentals</a>
+  <a href="#" class="subject">Discrete Structures</a>
+  <a href="#" class="subject">ICT</a>
+  <a href="subjects/sems1/calculus.html" class="subject cal">Calculus and Analytical Geo</a>
+  <a href="#" class="subject">English</a>
+  <a href="#" class="subject">Fehm-e-Quran</a>
+</div>
+
+<center><h2 class="sem2">2nd Semester(BSSE)</h2></center>
+<div class="slides">
+  <a href="subjects/sems2/oop.html" class="subject2">Object Oriented Programminng</a>
+  <a href="subjects/sems2/dld.html" class="subject2">Digital Logic Design</a>
+  <a href="subjects/sems2/database.html" class="subject2">Database Systems</a>
+  <a href="subjects/sems2/multical.html" class="subject2">Multivariable Calculus</a>
+  <a href="subjects/sems2/stats.html" class="subject2">Probability and Statistics</a>
+  <a href="subjects/sems2/pakstu.html" class="subject2">Pak Studies</a>
+</div>
+</body>
+</html>

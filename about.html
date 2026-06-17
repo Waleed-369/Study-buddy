@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutMe</title>
+</head>
+<link rel="stylesheet" href="css/about.css">
+
+<body>
+   <header class="header">
+        <div class="logo-section">
+            <img class="logoimg" src="pictures/cat (2).png" alt="logo">
+            <p class="logo">Study Buddy</p>
+        </div>
+            <nav class="navbar">
+                <a class="itm" href="index.html">Home</a>
+                <a class="itm" href="notes.html">Notes</a>
+                <a class="itm" href="community.html">Community</a>
+                <a class="itm" href="about.html">About Me</a>
+                <a class="itm" href="#">Log In</a>
+            </nav>
+        </div>
+        <div class="icons">
+          <label for="icons">
+            <i><img src="pictures/hamburger.png" class="menu-icon" alt=""></i>
+          </label>
+        </div>
+    </header>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+});
+    </script>
+    <div class="container">
+    <h1>About Me</h1>
+    <p>Hi! I’m a BS Software Engineering student at PMAS Arid Agriculture University, Rawalpindi. I’m
+        passionate about technology, programming, and building creative projects that can help students like me learn
+        and grow together. This website Study Buddy is one of my ongoing projects, where I aim to collect and share
+        study materials, notes, and past papers specifically for IT students of Arid University. As I continue my
+        journey through university, I’ll keep improving this platform and adding more features to make it a valuable
+        study resource for everyone.</p>
+    </div>
+</body>
+
+</html>

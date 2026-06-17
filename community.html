@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityHub</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        background: url('pictures/pexels-han-798356342-29689162.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 100;
+    transition: 1s;
+}
+.header::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6.2rem;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.header:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+.logo {
+    font-size:2rem ;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+ .logoimg {
+   height: 3.4rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.itm {
+    font-size: 1.5rem;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.7s ease;
+    height: 3.2rem;
+    width: 9rem;
+    text-align: center;
+    border-radius: 5rem;
+    padding-top: 0.6rem;
+    
+}
+.navbar :nth-child(5){
+    cursor: not-allowed;
+}
+.itm:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+.login a img {
+   height: 2.2rem;
+   transition: all 0.7s ease;
+}
+.login a img:hover {
+    height: 2.7rem;
+}
+.icons label i img {
+    height: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+    .coming-container {   
+        padding-inline: 1rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        text-align: center;
+        margin-top: 14rem;
+        color: white;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        animation: fade 2s ease-in-out infinite alternate;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .para {
+        font-size: 1.5rem;
+        color: #ffcc00;
+        font-weight: bold;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.6;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+@media( max-width:1053px ){
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 17rem;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(0, 0, 0, -1);
+        backdrop-filter: blur(50px);
+         overflow: hidden;
+        max-height: 0;  
+        transition: max-height 0.4s ease;
+    }
+    .icons label i  img {
+        display: block;
+    }
+    
+    .header{
+        height: 6rem;
+        top: 0;
+        left: 0;
+    }
+        .navbar.show {
+        max-height: 400px; 
+    }
+     .coming-container {
+        padding-inline: 1rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        text-align: center;
+        margin-top: 14rem;
+        color: white;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        animation: fade 2s ease-in-out infinite alternate;
+    }
+        .heading{
+        font-size: 2rem;
+    }
+    .para{
+        font-size: 1.2rem;
+    }
+}
+@media( max-width:480px){
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 17rem;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(0, 0, 0, -1);
+        backdrop-filter: blur(50px);
+
+        overflow: hidden;
+        max-height: 0;     
+        transition: max-height 0.4s ease;
+    }
+
+        .navbar.show {
+        max-height: 400px;
+    }
+
+    .header::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+    .navbar a {
+        justify-content: space-between;
+        font-size: 1.3rem;
+    }
+    .icons label i  img {
+        display: block;
+        height: 1.4rem;
+    }
+    .header {
+        height: 4rem;
+        top: 0;
+        left: 0;
+    }
+    .logo {
+        font-size: 1.4rem;
+    }
+    .logoimg{
+        height: 2.5rem;
+    }
+      .coming-container {
+        padding-inline: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+        margin-top: 10rem;
+        color: white;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        animation: fade 2s ease-in-out infinite alternate;
+    }
+    .heading{
+        font-size: 3.5vh;
+    }
+    .para{
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+<body>
+<header class="header">
+        <div class="logo-section">
+            <img class="logoimg" src="pictures/cat (2).png" alt="logo">
+            <p class="logo">Study Buddy</p>
+        </div>
+            <nav class="navbar">
+                <a class="itm" href="index.html">Home</a>
+                <a class="itm" href="notes.html">Notes</a>
+                <a class="itm" href="community.html">Community</a>
+                <a class="itm" href="about.html">About Me</a>
+                <a class="itm" href="#">Log In</a>
+            </nav>
+        </div>
+        <div class="icons">
+          <label for="icons">
+            <i><img src="pictures/hamburger.png" class="menu-icon" alt=""></i>
+          </label>
+        </div>
+    </header>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+});
+    </script>
+    <div class="coming-container">
+        <h1 class="heading">Community Hub</h1>
+        <p class="para">Our Community Hub feature is currently under development.Soon, it will become a dedicated space for IT
+            students of PMAS Arid Agriculture University to share knowledge, discuss ideas, and collaborate on projects.
+            Stay tuned something exciting is coming your way!</p>
+    </div>
+
+</body>
+
+</html>
